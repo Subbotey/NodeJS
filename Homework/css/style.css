@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	
+	background-image: url(../img/background17.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+.top-menu {
+    border: 1px solid #969696;
+    display: inline-block;
+    background: linear-gradient(to top, #e3e3e3, #c7c7c7);
+}
+.top-menu a {
+	padding: 5px 10px 5px 10px;
+	display: block;
+	text-align: center;
+	height: 100%;
+	color: #7a7a7a;
+	user-select: none; 
+}
+.top-menu:hover {
+	background: linear-gradient(to top, #dedede, #bfbfbf);
+}
+.top-menu:active {
+	background: linear-gradient(to top, #cccccc, #ababab);
+}
+.text-menu {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+.h1-zagolovok {
+	text-transform: uppercase;
+	text-align: center;
+	color: #7a7a7a;
+}
+.knopka {
+	text-transform: uppercase;
+	color: #7a7a7a;
+	text-decoration: none;
+	user-select: none;
+	background: linear-gradient(to top, #e3e3e3, #c7c7c7);
+	padding: 5px 10px 5px 10px;
+}
+.knopka:hover {
+	background: linear-gradient(to top, #dedede, #bfbfbf);
+}
+.knopka:active {
+	background: linear-gradient(to top, #cccccc, #ababab);
+}
+.autor {
+	color: #3f6f70;
+	font-weight: bold;
+	text-decoration: none;
+}
+.form {
+	width: 500px;
+	margin: 0 auto;
+}
+.form_opros {
+	width: 500px;
+}

@@ -2,17 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="discription" content="Стартовая страница сайта к домашнему заданию">
-	<meta name="keywords" content="Меню, списки, картинки">
+	<meta name="discription" content="Страница авторизации">
+	<meta name="keywords" content="Меню, авторизация">
 	<link rel="stylesheet" href="./css/style.css">
-	<title>Главная страница</title>
+	<title>Авторизация</title>
 </head>
 <body>
 	<ul>
 		<li class="top-menu">
 			<a 
 			   class="text-menu" 
-			   href="#">
+			   href="./index.html">
 				Главная
 			</a>
 		</li>
@@ -47,7 +47,7 @@
 		<li class="top-menu">
 			<a 
 			   class="text-menu" 
-			   href="./authorization.html">
+			   href="#">
 				Авторизация
 			</a>
 		</li>
@@ -60,46 +60,38 @@
 		</li>
 	</ul>
 	<h1 class="h1-zagolovok">
-		Главная страница
+	Авторизация
 	</h1>
-	<div id="nebo" align="center">
+	<form class="form" autocomplete="on" align="center">
+	  <fieldset>
+		<legend>
+			Авторизация
+		</legend>
 		<p>
-			<h2>Ночное небо</h2>
+		  <label>Ваш логин:
+			<input 
+				type="email" 
+				required 
+				placeholder="Login"
+			>
+		  </label>
 		</p>
 		<p>
-			<img
-				src="img/nebo.jpg" 
-				alt="Ночное небо"
-				height="500"
-				width="500"
+		  <label>Ваш пароль:
+			<input
+				type="password" 
+				required 
+				placeholder="Password"
+			 >
+		  </label>
+		</p>
+		<p>
+			<input
+				type="submit"
+				value="Войти"
 			>
 		</p>
-	</div>
-	<div id="planeta" align="center">
-		<p>
-			<h2>Планета</h2>
-		</p>
-		<p>
-			<img
-				src="img/planeta.jpg" 
-				alt="Планета"
-				height="500"
-				width="500"
-			>
-		</p>
-	</div>
-	<div id="galaktika" align="center">
-		<p>
-			<h2>Галактика</h2>
-		</p>
-		<p>
-			<img
-				src="img/kosmos.jpg" 
-				alt="Галактика"
-				height="500"
-				width="500"
-			>
-		</p>
-	</div>
+	  </fieldset>
+	</form>
 </body>
 </html>

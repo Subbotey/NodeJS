@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="discription" content="Страница с опросом к домашнему заданию">
+	<meta name="keywords" content="Меню, Опрос">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Опросный лист</title>
+</head>
+<body>
+	<ul>
+		<li class="top-menu">
+			<a 
+			   class="text-menu" 
+			   href="./index.html">
+				Главная
+			</a>
+		</li>
+		<li class="top-menu">
+			<a 
+			   class="text-menu" 
+			   href="./link.html">
+				Ссылки
+			</a>
+		</li>
+		<li class="top-menu">
+			<a 
+			   class="text-menu" 
+			   href="./text.html">
+				Текст
+			</a>
+		</li>
+		<li class="top-menu">
+			<a 
+			   class="text-menu" 
+			   href="./articles.html">
+				Статьи
+			</a>
+		</li>
+		<li class="top-menu">
+			<a 
+			   class="text-menu" 
+			   href="#">
+				Опрос
+			</a>
+		</li>
+		<li class="top-menu">
+			<a 
+			   class="text-menu" 
+			   href="./authorization.html">
+				Авторизация
+			</a>
+		</li>
+		<li class="top-menu">
+			<a 
+			   class="text-menu" 
+			   href="./registration.html">
+				Регистрация
+			</a>
+		</li>
+	</ul>
+	<h1 class="h1-zagolovok">
+	Опросный лист космонавта
+	</h1>
+	<p>
+		Для зачисления в команду по терраформированию, отправляющуюся на Марс, Вам необходимо указать личные данные.
+	</p>
+	<form class="form_opros">
+		<fieldset>
+			<legend>
+			Личные данные
+			</legend>
+			<div>
+				<b>ФИО:</b>
+			</div>
+			<label>
+				Ваше ФИО:
+				<input
+					   name="name"
+					   type="text"
+					   placeholder="ФИО"
+					   required
+					   minlength="5"
+					   maxlength="150"
+				>
+			</label>
+			<br />
+			<br />
+			<div>
+				<b>Ваш пол:</b>
+			</div>
+			<label>
+				Мужской 
+				<input 
+					   name="gender"
+					   type="radio"
+					   value="m"
+					   required
+				>
+			</label>
+			<label>
+				Женский
+				<input 
+					   name="gender"
+					   type="radio"
+					   value="f"
+					   required
+				>
+			</label>
+			<br />
+			<br />
+			<div>
+				<b>Дата рождения:</b>
+			</div>
+			<label>
+				Укажите дату: 
+				<input
+					   name="date"
+					   type="date"
+					   required
+				>
+			</label>
+			<br />
+			<br />
+			<div>
+				<b>Ваше фото:</b>
+			</div>
+			<label>
+				Выберите вашу фотографию
+				<input
+					   name="foto"
+					   type="file"
+					   accept="image/*"
+					   required
+				>
+			</label>
+			<br />
+			<br />
+			<div>
+				<b>Ваши параметры:</b>
+			</div>
+			<p>
+				<label>
+					Вес:
+					<input
+						   name="ves"
+						   type="text"
+						   placeholder="Вес"
+						   required
+						   minlength="1"
+						   maxlength="3"
+					>
+				</label>
+			</p>
+			<p>
+				<label>
+					Рост:
+					<input
+						   name="rost"
+						   type="text"
+						   placeholder="Рост"
+						   required
+						   minlength="2"
+						   maxlength="3"
+					>
+				</label>
+			</p>
+			<p>
+				<label>
+					Размер ноги:
+					<input
+						   name="razmer_nog"
+						   type="text"
+						   placeholder="Размер"
+						   required
+					>
+				</label>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>
+				Специализация
+			</legend>
+			<div>
+				<b>Выберите желаемую специальность:</b>
+			</div>
+			<p>
+				<label>
+					Сварщик
+					<input 
+						   name="spec"
+						   type="checkbox"
+						   value="svarshik"
+					>
+				</label>
+			</p>
+			<p>
+				<label>
+					Повар
+					<input 
+						   name="spec"
+						   type="checkbox"
+						   value="povar"
+					>
+				</label>
+			</p>
+			<p>
+				<label>
+					Слесарь
+					<input 
+						   name="spec"
+						   type="checkbox"
+						   value="slesar"
+					>
+				</label>
+			</p>
+		</fieldset>
+		<br />
+		<button class="knopka">Отправить</button>
+	</form>
+</body>
+</html>
