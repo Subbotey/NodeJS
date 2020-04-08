@@ -7,7 +7,12 @@ body {
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
-.top-menu {
+.right-menu {
+	border: 1px solid #969696;
+    background: linear-gradient(to top, #e3e3e3, #c7c7c7);
+
+}
+.top-menu  {
     border: 1px solid #969696;
     display: inline-block;
     background: linear-gradient(to top, #e3e3e3, #c7c7c7);
