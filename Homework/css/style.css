@@ -9,6 +9,7 @@ body {
 }
 .right-menu {
 	border: 1px solid #969696;
+	display: block;
     background: linear-gradient(to top, #e3e3e3, #c7c7c7);
 
 }
@@ -25,10 +26,18 @@ body {
 	color: #7a7a7a;
 	user-select: none; 
 }
-.top-menu:hover {
+.right-menu a {
+	padding: 5px 10px 5px 10px;
+	display: block;
+	text-align: center;
+	height: 100%;
+	color: #7a7a7a;
+	user-select: none; 
+}*
+.top-menu:hover .right-menu:hover {
 	background: linear-gradient(to top, #dedede, #bfbfbf);
 }
-.top-menu:active {
+.top-menu:active .right-menu:hover {
 	background: linear-gradient(to top, #cccccc, #ababab);
 }
 .text-menu {
@@ -41,6 +50,11 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	color: #7a7a7a;
+}
+.zagolovok {
+	text-transform: uppercase;
+	color: #7a7a7a;
+
 }
 .knopka {
 	text-transform: uppercase;
@@ -67,4 +81,25 @@ body {
 }
 .form_opros {
 	width: 500px;
+}
+.futer {
+	background-color: gray;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	display: block;
+	color: aliceblue
+}
+.text-img {
+	position: absolute;
+	color: #fff;
+	padding: 0px;
+	font-weight: 600;
+	bottom: 20px;
+	left: 20px;
+}
+.img {
+	position: relative;
+}
+.telo {
+	margin: 20px 5% 0px 5%;
 }
