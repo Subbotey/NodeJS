@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url(../img/background17.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.flex-menu {
+	display: flex;
+	justify-content: center;
+}
+
+.top-menu  {
+    border: 1px solid #969696;
+    background: linear-gradient(to top, #e3e3e3, #c7c7c7);
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 120px;
+}
+
+.top-menu a {
+	padding: 5px 10px 5px 10px;
+	display: block;
+	text-align: center;
+	height: 100%;
+	color: #7a7a7a;
+	user-select: none; 
+	text-decoration: none;
+}
+
+.top-menu:hover, .sub-menu a:hover {
+	background: linear-gradient(to top, #dedede, #bfbfbf);
+}
+.top-menu:active, .sub-menu a:active {
+	background: linear-gradient(to top, #cccccc, #ababab);
+}
+
+
+.sub-menu {
+	display: none;
+	
+}
+
+.sub-menu a {
+	background: linear-gradient(to top, #e3e3e3, #c7c7c7);
+	border: 1px solid #969696;
+	padding: 5px 10px 5px 10px;
+	display: block;
+	text-align: center;
+	height: 100%;
+	color: #7a7a7a;
+	user-select: none;
+}
+
+div:hover > .sub-menu {
+	display: block;
+	position: absolute;
+}
+
+.flex-img {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.flex-img img {
+	padding: 0px 7px 0px 7px;
+}
+
+.modal {
+	display: none;
+	
+}
+
+.modal:target {
+	display: block;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.15);
+}
+
+.div-modal {
+	position: relative;
+}
+
+.img-modal {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}

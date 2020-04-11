@@ -34,10 +34,10 @@ body {
 	color: #7a7a7a;
 	user-select: none; 
 }*
-.top-menu:hover .right-menu:hover {
+.top-menu:hover, .right-menu:hover {
 	background: linear-gradient(to top, #dedede, #bfbfbf);
 }
-.top-menu:active .right-menu:hover {
+.top-menu:active, .right-menu:active {
 	background: linear-gradient(to top, #cccccc, #ababab);
 }
 .text-menu {
